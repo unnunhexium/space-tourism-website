@@ -21,10 +21,10 @@
     <!-- Our custom CSS -->
     <link rel="stylesheet" href="index.css" />
     <title>Frontend Mentor | Space tourism website</title>
-
     <script src="./index.js" defer></script>
   </head>
-  <body class="home">
+
+  <body class="technology">
     <a class="skip-to-content" href="#main">Skip to content</a>
     <header class="primary-header flex">
       <div>
@@ -43,7 +43,7 @@
           data-visible="false"
           class="primary-navigation underline-indicators flex"
         >
-          <li class="active">
+          <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="index.html"
@@ -64,7 +64,7 @@
               ><span aria-hidden="true">02</span>Crew</a
             >
           </li>
-          <li>
+          <li class="active">
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
               href="technology.html"
@@ -75,25 +75,43 @@
       </nav>
     </header>
 
-    <main id="main" class="grid-container grid-container--home">
-      <div>
-        <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
-          So, you want to travel to
-          <span class="d-block fs-900 ff-serif text-white">Space</span>
-        </h1>
+    <main id="main" class="grid-container grid-container--destination">
+      <h1 class="numbered-title">
+        <span aria-hidden="true">03</span> Space launch 101
+      </h1>
+      <img
+        src="assets/technology/image-launch-vehicle-landscape.jpg"
+        alt="the launch vehicle"
+      />
+      <img
+        src="assets/technology/image-launch-vehicle-portrait.jpg"
+        alt="the launch vehicle"
+      />
+      <div class="number-indicators flex">
+        <button aria-selected="true">
+          <span class="ff-serif fs-600 text-dark">1</span>
+        </button>
+        <button aria-selected="false">
+          <span class="ff-serif fs-600 text-white">2</span>
+        </button>
+        <button aria-selected="false">
+          <span class="ff-serif fs-600 text-white">3</span>
+        </button>
+      </div>
 
-        <p>
-          Let’s face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we’ll give you a truly out of this world
-          experience!
+      <article class="destination-info">
+        <h2 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
+          The terminology...
+        </h2>
+        <h3 class="fs-700 ff-serif uppercase">Launch vehicle</h3>
+        <p class="text-accent">
+          Space capsule A space capsule is an often-crewed spacecraft that uses
+          a blunt-body reentry capsule to reenter the Earth's atmosphere without
+          wings. Our capsule is where you'll spend your time during the flight.
+          It includes a space gym, cinema, and plenty of other activities to
+          keep you entertained.
         </p>
-      </div>
-      <div>
-        <a href="#" class="large-button uppercase ff-serif text-dark bg-white"
-          >Explore</a
-        >
-      </div>
+      </article>
     </main>
   </body>
 </html>
