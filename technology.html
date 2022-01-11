@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="index.css" />
     <title>Frontend Mentor | Space tourism website</title>
     <script src="navigation.js" defer></script>
-    <script src="tabs.js" defer></script>
+    <script src="technology.js" defer></script>
   </head>
 
   <body class="technology">
@@ -82,22 +82,16 @@
       </h1>
 
       <!-- Launch vehicle -->
-      <div id="vehicle-image">
-        <picture>
-          <img
-            class="horizontal-image"
-            src="assets/technology/image-launch-vehicle-landscape.jpg"
-            alt="the launch vehicle"
-          />
-        </picture>
-        <picture>
+      <!-- <div id="vehicle-image"> -->
+
+      <!-- <picture>
           <img
             class="vertical-image"
             src="assets/technology/image-launch-vehicle-portrait.jpg"
             alt="the launch vehicle"
           />
         </picture>
-      </div>
+      </div> -->
       <!-- Spaceport -->
       <!-- <div id="spaceport-image">
         <picture hidden class="horizontal-image">
@@ -140,7 +134,7 @@
           class="small-button"
           role="tab"
           tabindex="0"
-          aria-controls="technology-tab"
+          aria-controls="vehicle-tab"
           data-image="vehicle-image"
         >
           <span class="ff-serif fs-600">1</span>
@@ -150,7 +144,7 @@
           class="small-button"
           role="tab"
           tabindex="-1"
-          aria-controls="technology-tab"
+          aria-controls="spaceport-tab"
           data-image="spaceport-image"
         >
           <span class="ff-serif fs-600">2</span>
@@ -160,14 +154,14 @@
           class="small-button"
           role="tab"
           tabindex="0"
-          aria-controls="technology-tab"
+          aria-controls="capsule-tab"
           data-image="capsule-image"
         >
           <span class="ff-serif fs-600">3</span>
         </button>
       </div>
       <!-- Vehicle -->
-      <article class="technology-info">
+      <article id="vehicle-tab" class="technology-info">
         <h2 class="technology-subtitle">The terminology...</h2>
         <h3 class="fs-700 ff-serif uppercase">Launch vehicle</h3>
         <p class="text-accent">
@@ -177,9 +171,16 @@
           operation. Standing 150 metres tall, it's quite an awe-inspiring sight
           on the launch pad!
         </p>
+        <picture id="vehicle-image">
+          <img
+            class="horizontal-image"
+            src="assets/technology/image-launch-vehicle-landscape.jpg"
+            alt="the launch vehicle"
+          />
+        </picture>
       </article>
       <!-- Spaceport -->
-      <article hidden class="technology-info">
+      <article id="spaceport-tab" hidden class="technology-info">
         <h2 class="technology-subtitle">The terminology...</h2>
         <h3 class="fs-700 ff-serif uppercase">Spaceport</h3>
         <p class="text-accent">
@@ -188,9 +189,16 @@
           aircraft. Based in the famous Cape Canaveral, our spaceport is ideally
           situated to take advantage of the Earth’s rotation for launch.
         </p>
+        <picture hidden id="spaceport-image">
+          <img
+            class="spaceport-image"
+            src="assets/technology/image-spaceport-landscape.jpg"
+            alt="the spaceport"
+          />
+        </picture>
       </article>
       <!-- Capsule -->
-      <article hidden class="technology-info">
+      <article id="capsule-tab" hidden class="technology-info">
         <h2 class="technology-subtitle">The terminology...</h2>
         <h3 class="fs-700 ff-serif uppercase">Space capsule</h3>
         <p class="text-accent">
@@ -200,6 +208,12 @@
           a space gym, cinema, and plenty of other activities to keep you
           entertained.
         </p>
+        <picture hidden id="capsule-image">
+          <img
+            src="assets/technology/image-space-capsule-landscape.jpg"
+            alt="the space capsule"
+          />
+        </picture>
       </article>
     </main>
   </body>

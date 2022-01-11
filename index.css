@@ -49,8 +49,6 @@
 /* Reset               */
 /* ------------------- */
 
-/* https://piccalil.li/blog/a-modern-css-reset/ */
-
 /* Box sizing */
 *,
 *::before,
@@ -751,7 +749,7 @@ body {
   padding-bottom: 3rem;
 }
 
-.grid-container--technology > #vehicle-image {
+.grid-container--technology > .vertical-image {
   grid-area: image;
   border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
 }
