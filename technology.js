@@ -21,8 +21,8 @@ function selectTechnology(e) {
   } else {
     targetTab = e.target;
   }
-  const targetImage = targetTab.getAttribute("data-image");
   const targetPanel = targetTab.getAttribute("aria-controls");
+  const targetImage = targetTab.getAttribute("data-image");
 
   hideContent(document, ".technology-info");
   showContent(document, [`#${targetPanel}`]);

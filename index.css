@@ -500,7 +500,6 @@ select {
 .number-indicators {
   cursor: pointer;
   flex-direction: row;
-  justify-self: start;
 }
 
 /* ----------------------------- */
@@ -561,6 +560,24 @@ body {
 @media (min-width: 45rem) {
   .crew {
     background-image: url("./assets/crew/background-crew-desktop.jpg");
+  }
+}
+
+/* technology */
+.technology {
+  background-image: url("./assets/technology/background-technology-mobile.jpg");
+}
+
+@media (min-width: 35rem) {
+  .technology {
+    background-position: center center;
+    background-image: url("./assets/technology/background-technology-tablet.jpg");
+  }
+}
+
+@media (min-width: 45rem) {
+  .technology {
+    background-image: url("./assets/technology/background-technology-desktop.jpg");
   }
 }
 
@@ -671,7 +688,7 @@ body {
 }
 
 @media (min-width: 45em) {
-  .grid-container {
+  .grid-container:not(.grid-container--technology) {
     text-align: left;
     column-gap: var(--container-gap, 2rem);
     grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
@@ -740,7 +757,6 @@ body {
     "tabs"
     "subtitle"
     "content";
-  padding: 0;
   column-gap: 2rem;
 }
 
@@ -749,7 +765,9 @@ body {
   padding-bottom: 3rem;
 }
 
-.grid-container--technology > .vertical-image {
+.grid-container--technology > #vehicle-image,
+.grid-container--technology > #spaceport-image,
+.grid-container--technology > #capsule-image {
   grid-area: image;
   border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
 }
@@ -777,7 +795,6 @@ body {
 
   .number-indicators {
     flex-direction: column;
-    justify-self: start;
   }
 
   .horizontal-image {
@@ -786,5 +803,9 @@ body {
 
   .grid-container--technology .vertical-image {
     display: block;
+  }
+
+  .grid-container--technology > .number-indicators {
+    justify-self: start;
   }
 }
